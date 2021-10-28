@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ActivityIngresar">
+
+  <EditText
+      android:id="@+id/txtcodigo"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="10dp"
+      android:hint="Codigo"
+      android:ems="10"
+      android:inputType="textPersonName"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.067" />
+
+  <EditText
+      android:id="@+id/txtnombre"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="28dp"
+      android:layout_marginEnd="10dp"
+      android:ems="10"
+      android:inputType="textPersonName"
+      android:hint="Nombre"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/txtcodigo"
+      app:layout_constraintVertical_bias="0.014"
+      app:layout_marginBaseline="25dp" />
+
+  <EditText
+      android:id="@+id/txtapellidos"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="28dp"
+      android:layout_marginEnd="10dp"
+      android:ems="10"
+      android:inputType="textPersonName"
+      android:hint="Apellidos"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/txtnombre"
+      app:layout_constraintVertical_bias="0.0" />
+
+  <EditText
+      android:id="@+id/txtedad"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="28dp"
+      android:layout_marginEnd="10dp"
+      android:ems="10"
+      android:inputType="numberDecimal"
+      android:hint="Edad"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/txtapellidos"
+      app:layout_constraintVertical_bias="0.0" />
+
+  <EditText
+      android:id="@+id/txtcorreo"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="28dp"
+      android:layout_marginEnd="10dp"
+      android:ems="10"
+      android:inputType="textPersonName"
+      android:hint="Correo"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/txtedad"
+      app:layout_constraintVertical_bias="0.0" />
+
+  <Button
+      android:id="@+id/btnagregar"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="35dp"
+      android:layout_marginTop="28dp"
+      android:layout_marginEnd="35dp"
+      android:backgroundTint="@color/black"
+      android:text="Agregar Persona"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/txtcorreo"
+      app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
